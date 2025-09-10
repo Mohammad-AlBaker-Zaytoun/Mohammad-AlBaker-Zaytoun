@@ -1,7 +1,7 @@
 # <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="40" height="40" /> Hey there! I'm Mohammad Al-Baker Zaytoun
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=Full%20Stack%20Developer&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=Building%20the%20Future,%20One%20Line%20at%20a%20Time&descSize=20&descAlignY=55" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=Senior%20Software%20Engineer&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=ffffff&desc=Building%20the%20Future,%20One%20Line%20at%20a%20Time&descSize=20&descAlignY=55" alt="Header" />
 </div>
 
 <div align="center">
@@ -46,7 +46,7 @@ class FullStackDeveloper {
   location: string = "Beirut, Lebanon 🇱🇧";
   company: string = "Zaytoun Solutions";
   
-  languages: string[] = ["JavaScript", "TypeScript", "Python", "SQL"];
+  languages: string[] = ["JavaScript", "TypeScript", "Python", "SQL", "Java", "PHP", "NoSQL"];
   
   currentlyLearning: string[] = [
     "Advanced AWS Architecture",
@@ -78,22 +78,22 @@ class FullStackDeveloper {
 
 ### 🎨 **Frontend Magic**
 <div>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,vue,typescript,javascript,html,css,tailwind,sass,redux,vite,webpack&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=androidstudio,react,nextjs,typescript,javascript,html,css,tailwind,redux,vite,webpack,bootstrap,regex&theme=dark" />
 </div>
 
 ### ⚙️ **Backend Power**
 <div>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,python,fastapi,graphql,nginx,redis&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=nodejs,express,python,fastapi,graphql,nginx,redis,php,cs,dotnet,anaconda,electron,gradle,java,jquery,maven,pytorch,selenium,&theme=dark" />
 </div>
 
 ### 🗄️ **Database & Cloud**
 <div>
-  <img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,aws,docker,vercel,netlify,firebase&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,azure,aws,docker,vercel,netlify,firebase,supabase,gcp,cloudflare,prisma,sqlite&theme=dark" />
 </div>
 
 ### 🛠️ **Tools & More**
 <div>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma,postman,linux,bash&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,figma,postman,linux,bash,grafana,ubuntu,linux,kali,redhat,latex,md,npm,yarn,pnpm,opencv,raspberrypi,&theme=dark" />
 </div>
 
 </div>
@@ -125,7 +125,7 @@ class FullStackDeveloper {
 
 <div align="center">
   
-  [![Trophies](https://github-profile-trophy.vercel.app/?username=Mohammad-AlBaker-Zaytoun&theme=discord&no-frame=true&no-bg=true&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+  [![Trophies](https://github-profile-trophy.vercel.app/?username=Mohammad-AlBaker-Zaytoun&theme=discord&no-frame=true&no-bg=true&column=5)](https://github.com/ryo-ma/github-profile-trophy)
   
 </div>
 
@@ -169,7 +169,7 @@ HTML         ██░░░░░░░░░░░░░░░░░░░░�
       <td align="center" width="50%">
         <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="100">
         <br><b>🔨 Building</b><br>
-        Scalable microservices with Next.js 14
+        Scalable microservices with Next.js 15
       </td>
       <td align="center" width="50%">
         <img src="https://user-images.githubusercontent.com/74038190/212257460-738ff738-247f-4445-a718-cdd0ca76e2db.gif" width="100">
