@@ -84,11 +84,35 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: discord
 
+      - name: Point README cards to local SVG files
+        run: |
+          python <<'PY'
+          from pathlib import Path
+
+          readme = Path("README.md")
+          content = readme.read_text(encoding="utf-8")
+
+          replacements = {
+              "https://github-profile-trophy.vercel.app/?username=Mohammad-AlBaker-Zaytoun&theme=discord&no-frame=true&no-bg=true&column=5": "./profile/github-trophies.svg",
+              "https://github-readme-stats.vercel.app/api?username=Mohammad-AlBaker-Zaytoun&show_icons=true&count_private=true&hide_border=true&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&bg_color=0d1117": "./profile/github-stats.svg",
+              "https://github-readme-stats.vercel.app/api/top-langs/?username=Mohammad-AlBaker-Zaytoun&layout=compact&hide_border=true&title_color=00d9ff&text_color=c9d1d9&bg_color=0d1117": "./profile/top-languages.svg",
+              "https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=Next-Portfolio&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true": "./profile/next-portfolio.svg",
+              "https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=vscode-portfolio&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true": "./profile/vscode-portfolio.svg",
+              "https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=HLR-Lookups-TMT&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true": "./profile/hlr-lookups-tmt.svg",
+              "https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=Prayers-API&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true": "./profile/prayers-api.svg",
+          }
+
+          for old, new in replacements.items():
+              content = content.replace(old, new)
+
+          readme.write_text(content, encoding="utf-8")
+          PY
+
       - name: Commit generated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/*.svg
+          git add README.md profile/*.svg
 
           if git diff --cached --quiet; then
             echo "README cards are already up to date."
