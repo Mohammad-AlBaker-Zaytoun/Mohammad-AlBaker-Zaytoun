@@ -111,8 +111,8 @@ class SeniorSoftwareEngineer {
 ## 📊 **GitHub Stats Dashboard**
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Mohammad-AlBaker-Zaytoun&show_icons=true&count_private=true&hide_border=true&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&bg_color=0d1117" alt="GitHub Stats" /> 
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohammad-AlBaker-Zaytoun&layout=compact&hide_border=true&title_color=00d9ff&text_color=c9d1d9&bg_color=0d1117" alt="Top Languages" />
+  <img width="49%" height="195px" src="./profile/github-stats.svg" alt="GitHub Stats" /> 
+  <img width="49%" height="195px" src="./profile/top-languages.svg" alt="Top Languages" />
 </div>
 
 <div align="center">
@@ -125,7 +125,7 @@ class SeniorSoftwareEngineer {
 
 <div align="center">
   
-  [![Trophies](https://github-profile-trophy.vercel.app/?username=Mohammad-AlBaker-Zaytoun&theme=discord&no-frame=true&no-bg=true&column=5)](https://github.com/ryo-ma/github-profile-trophy)
+  [![Trophies](./profile/github-trophies.svg)](https://github.com/ryo-ma/github-profile-trophy)
   
 </div>
 
@@ -133,19 +133,19 @@ class SeniorSoftwareEngineer {
 
 <div align="center">
   <a href="https://github.com/Mohammad-AlBaker-Zaytoun/Next-Portfolio">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=Next-Portfolio&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true" />
+    <img width="49%" src="./profile/next-portfolio.svg" />
   </a>
   <a href="https://github.com/Mohammad-AlBaker-Zaytoun/vscode-portfolio">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=vscode-portfolio&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true" />
+    <img width="49%" src="./profile/vscode-portfolio.svg" />
   </a>
 </div>
 
 <div align="center">
   <a href="https://github.com/Mohammad-AlBaker-Zaytoun/HLR-Lookups-TMT">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=HLR-Lookups-TMT&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true" />
+    <img width="49%" src="./profile/hlr-lookups-tmt.svg" />
   </a>
   <a href="https://github.com/Mohammad-AlBaker-Zaytoun/Prayers-API">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Mohammad-AlBaker-Zaytoun&repo=Prayers-API&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true" />
+    <img width="49%" src="./profile/prayers-api.svg" />
   </a>
 </div>
 
