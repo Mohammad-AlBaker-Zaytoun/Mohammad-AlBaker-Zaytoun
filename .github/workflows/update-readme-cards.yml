@@ -1,0 +1,99 @@
+name: Update README cards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-readme-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme-cards
+  cancel-in-progress: true
+
+jobs:
+  generate-cards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Prepare output directory
+        run: mkdir -p profile
+
+      - name: Generate GitHub statistics card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&bg_color=0d1117
+          path: profile/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&title_color=00d9ff&text_color=c9d1d9&bg_color=0d1117
+          path: profile/top-languages.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Next Portfolio card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Next-Portfolio&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true
+          path: profile/next-portfolio.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate VS Code Portfolio card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=vscode-portfolio&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true
+          path: profile/vscode-portfolio.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate HLR Lookups card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=HLR-Lookups-TMT&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true
+          path: profile/hlr-lookups-tmt.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Prayers API card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Prayers-API&theme=react&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&hide_border=true
+          path: profile/prayers-api.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub trophies
+        uses: ryo-ma/github-profile-trophy@ccb591b887775ee567c0d9a38424ddfb9b1906c4
+        with:
+          username: ${{ github.repository_owner }}
+          output_path: profile/github-trophies.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          theme: discord
+
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+
+          if git diff --cached --quiet; then
+            echo "README cards are already up to date."
+            exit 0
+          fi
+
+          git commit -m "chore: update generated README cards"
+          git push
