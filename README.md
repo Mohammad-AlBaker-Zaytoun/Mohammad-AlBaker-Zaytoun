@@ -151,15 +151,9 @@ class SeniorSoftwareEngineer {
 
 ## 💻 **Weekly Development Breakdown**
 
-<!--START_SECTION:waka-->
-```text
-TypeScript   █████████████████████▓░░░░░░░░░░░░░░░░░░   52.8 %
-JavaScript   ████████▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   21.3 %
-Python       █████▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   13.7 %
-CSS          ███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    7.8 %
-HTML         ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    4.4 %
-```
-<!--END_SECTION:waka-->
+<div align="center">
+  <img src="./profile/weekly-development.svg" alt="Weekly Development Breakdown" width="100%" />
+</div>
 
 ## 🎯 **Current Focus**
 
